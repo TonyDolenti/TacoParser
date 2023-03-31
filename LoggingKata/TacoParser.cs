@@ -41,10 +41,12 @@
             var point = new Point();
             point.Latitude = double.Parse(latitude);
             point.Longitude = double.Parse(longitude);
-            
-            var tacoBell = new TacoBell();
-            tacoBell.Name = name;
-            tacoBell.Location = point;
+
+            var tacoBell = new TacoBell
+            {
+                Name = name,
+                Location = point
+            };
 
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
